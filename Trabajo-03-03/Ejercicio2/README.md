@@ -1,7 +1,31 @@
-/*
-===============================================================================
-ANÁLISIS TÉCNICO DEL USO DE STREAMS
-===============================================================================
+# Ejercicio 2: Sistema de Ventas ABC con Streams en Java
+
+## Descripción
+Este ejercicio demuestra el uso de la API Stream de Java para procesar datos de un sistema de ventas empresarial.
+
+## Archivos
+- `Ventas_ABC.java` - Programa principal con implementación de Streams
+- `README.md` - Este archivo de documentación
+
+## Cómo ejecutar
+```bash
+# Compilar
+javac Ejercicio2/Ventas_ABC.java
+
+# Ejecutar (desde la carpeta Trabajo-03-03)
+java Ejercicio2.Ventas_ABC
+```
+
+## Operaciones Stream implementadas
+1. **Filter + ForEach**: Filtrar vendedores con ventas > $5,000,000
+2. **Max + Comparator**: Encontrar vendedor con mayor venta
+3. **MapToDouble + Sum**: Calcular total de ventas
+4. **MapToDouble + Average**: Calcular promedio de ventas
+5. **Sorted**: Ordenar vendedores por ventas (descendente)
+
+---
+
+## ANÁLISIS TÉCNICO DEL USO DE STREAMS
 
 1. ¿QUÉ HACE CADA OPERACIÓN STREAM UTILIZADA?
 
@@ -118,5 +142,20 @@ Ventajas en producción:
 La API Stream es fundamental en el desarrollo empresarial moderno con Java,
 permitiendo procesar datos de manera eficiente y legible en aplicaciones
 críticas de negocio.
-===============================================================================
-*/
+
+---
+
+## Resultados esperados
+Al ejecutar el programa, verás:
+- **3 vendedores** con ventas mayores a $5,000,000
+- **Ana López** como la mejor vendedora ($9,200,000)
+- **Total de ventas**: $32,100,000
+- **Promedio de ventas**: $6,420,000
+- **Ranking completo** ordenado de mayor a menor
+
+## Tecnologías utilizadas
+- Java 8+
+- API Stream (java.util.stream)
+- Expresiones Lambda
+- Optional y OptionalDouble
+- Programación Funcional
